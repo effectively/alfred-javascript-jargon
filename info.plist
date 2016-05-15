@@ -143,7 +143,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Define word using Youdao API.</string>
+	<string>github repo: github.com/Youmoo/alfred-javascript-jargon</string>
 	<key>uidata</key>
 	<dict>
 		<key>246834DE-E5CE-4934-AD5D-4CD5D3031E1E</key>
@@ -168,6 +168,13 @@
 			<integer>210</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>SJSJ_PATH</key>
+		<string>~/.SJSJ</string>
+	</dict>
+	<key>version</key>
+	<string>3.0</string>
 	<key>webaddress</key>
 	<string>http://xiaoyuan.life</string>
 </dict>

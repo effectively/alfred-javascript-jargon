@@ -1,12 +1,16 @@
 #! /usr/local/bin/node
 
 
-const os=require('os');
+const os = require('os');
 const fs = require('fs');
+
 const keyword = process.argv[2];
 
-const jargon_path = os.homedir()+'/.SJSJ/';
-const abbr = '_data/abbr.yml';
+const jargon_path = (process.env['SJSJ_PATH'] || os.homedir() + '/.SJSJ/')
+    .replace(/^~/, os.homedir());
+
+const abbr = '/_data/abbr.yml';
+
 
 
 const filter = keyword ? kw=> new RegExp(keyword, 'i').test(kw.k) : ()=>true;

@@ -4,8 +4,10 @@ const os = require('os');
 const fs = require('fs');
 const keyword = process.argv[2];
 
-const jargon_path = os.homedir() + '/.SJSJ/';
-const glossary = '_glossary/';
+const jargon_path = (process.env['SJSJ_PATH'] || os.homedir() + '/.SJSJ/')
+    .replace(/^~/, os.homedir());
+
+const glossary = '/_glossary/';
 const url = 'http://jargon.js.org/_glossary/';
 
 
